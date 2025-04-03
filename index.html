@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DarkPortFolio</title>
+    <script>
+        let titles = ["Welcome ❤️", "Surendra.S 💻", "Portfolio 🚀"];
+        let index = 0;
+
+        function changeTitle() {
+            document.title = titles[index];
+            index = (index + 1) % titles.length;
+        }
+
+        setInterval(changeTitle, 2000); // Change title every 2 seconds
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <style>
         body {
             background-color: black;
@@ -113,11 +125,36 @@
                 <li>Building a honeypot for intrusion detection analysis</li>
             </ul>
         </div>
-        <div class="section" id="resume-download">
+        <div class="main" id="resume-download">
             <h3>Download My Resume</h3>
-            <a href="resume.pdf" download>Download PDF</a>
+            <a onclick="generatePDF()" href="resume.pdf" download>Download PDF</a>
         </div>
-        <div class="section" id="contact">
+        <script>
+              function generatePDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            doc.setFont("helvetica", "bold");
+            doc.setFontSize(22);
+            doc.text("Surendra.S - Resume", 20, 20);
+
+            doc.setFontSize(14);
+            doc.setFont("helvetica", "normal");
+            doc.text("Aspiring Ethical Hacker | Shell Scripting Enthusiast | Future Special Agent", 20, 40);
+
+            doc.setFontSize(12);
+            doc.text("Skills:", 20, 60);
+            doc.text("- Programming Languages: Python, Java, C, C++", 20, 70);
+            doc.text("- Cybersecurity Tools: Snort, Nmap, Wireshark, John the Ripper, Hping3, Termux", 20, 80);
+            doc.text("- Operating Systems: Linux (Kali, Parrot OS), Windows", 20, 90);
+            doc.text("- Scripting: Bash, PowerShell", 20, 100);
+
+            doc.text("Contact: surendratech2609@gmail.com", 20, 120);
+
+            doc.save("Surendra_Resume.pdf");
+        }
+        </script>
+        <div class="main" id="contact">
             <h3>Contact</h3>
             <p>Email: <a href="mailto:surendratech2609@gmail.com">surendratech2609@gmail.com</a></p>
             <p>Feel free to reach out for collaborations, cybersecurity discussions, or ethical hacking projects!</p>

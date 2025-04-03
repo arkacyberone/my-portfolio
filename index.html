@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surendra.S | Hacker Portfolio</title>
+    <title>DarkPortFolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: black;
             color: white;
-            font-family: monospace;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
             margin: 0;
             padding: 20px;
         }
@@ -16,12 +18,18 @@
             max-width: 800px;
             margin: auto;
         }
-        h1, h2 {
-            text-align: center;
+        h1 {
+            font-size: 22px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+        h3 {
+            font-size: 16px;
         }
         .section {
             border: 2px solid white;
-            padding: 20px;
+            padding: 15px;
             margin: 20px 0;
             transition: background-color 0.3s, color 0.3s;
         }
@@ -41,43 +49,75 @@
             color: white;
             text-decoration: none;
             transition: color 0.3s, background-color 0.3s;
+            padding: 5px 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 14px;
         }
         a:hover {
             color: black !important;
             background-color: white !important;
-            text-decoration: underline;
-            padding: 2px 5px;
-            border-radius: 3px;
-            display: inline-block;
+            text-decoration: none;
+        }
+        .social-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-buttons a {
+            margin: 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My Hacker Portfolio</h1>
-        <h2>Surendra.S</h2>
+        
+        <h1>DarkPortFolio</h1>
+        
         
         <div class="section">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="section" id="about">
             <h3>About Me</h3>
             <p>Aspiring Ethical Hacker | Shell Scripting Enthusiast | Future Special Agent</p>
+            <p>I have a strong passion for cybersecurity and penetration testing, constantly learning and improving my skills. With expertise in various cybersecurity tools, I enjoy uncovering vulnerabilities and strengthening security systems. Additionally, I am deeply interested in ethical hacking, scripting, and digital forensics. My goal is to become a special agent specializing in cyber operations.</p>
         </div>
         
-        <div class="section">
+        <div class="section" id="skills">
             <h3>Skills</h3>
             <ul>
                 <li>Programming Languages: Python, Java, C, C++</li>
                 <li>Cybersecurity Tools: Snort, Nmap, Wireshark, John the Ripper, Hping3, Termux</li>
+                <li>Operating Systems: Linux (Kali, Parrot OS), Windows</li>
+                <li>Scripting: Bash, PowerShell</li>
+                <li>Networking: TCP/IP, Firewalls, VPNs, Proxy Chains</li>
             </ul>
         </div>
         
-        <div class="section">
+        <div class="section" id="projects">
             <h3>Projects</h3>
             <p>Currently working on exciting cybersecurity projects. Stay tuned!</p>
+            <ul>
+                <li>Developing custom shell scripts for penetration testing automation</li>
+                <li>Creating a personal cybersecurity toolkit</li>
+                <li>Building a honeypot for intrusion detection analysis</li>
+            </ul>
         </div>
         
-        <div class="section">
+        <div class="section" id="contact">
             <h3>Contact</h3>
             <p>Email: <a href="mailto:surendratech2609@gmail.com">surendratech2609@gmail.com</a></p>
+            <p>Feel free to reach out for collaborations, cybersecurity discussions, or ethical hacking projects!</p>
+        </div>
+        
+        <div class="social-buttons">
+            <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
+            <a href="https://facebook.com/yourusername" target="_blank">Facebook</a>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
         </div>
     </div>
 </body>

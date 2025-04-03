@@ -1,12 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #121212;  /* Dark background */
-    color: white;  /* Light text */
+    background: #000000; /* Dark Background */
+    color: white;
     font-family: Arial, sans-serif;
-    text-align: center;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    height: 100vh;
 }
 
+.container {
+    width: 95vw;  /* Full Width */
+    height: 95vh; /* Full Height */
+    background: #000000; /* Dark Grey */
+    border: 1px solid white; /* Thin White Border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sub-container {
+    width: 80%;
+    max-width: 800px;
+    background: #1e1e1e; /* Dark Grey */
+    color: white;
+    padding: 20px;
+    border: 1px solid white; /* Thin White Border */
+    text-align: center;
+    margin: auto;
+}

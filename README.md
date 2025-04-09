@@ -27,4 +27,4 @@ Email: **surendratech2609@gmail.com**
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/arkspark-dev/my-portfolio.git
